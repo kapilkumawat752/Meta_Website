@@ -1,0 +1,2 @@
+[23-May-2021 17:06:32 UTC] PHP Notice:  Undefined index: contact_subject in /home/keykloud/public_html/contact.php on line 13
+[23-May-2021 17:06:32 UTC] PHP Notice:  Undefined index: contact_message in /home/keykloud/public_html/contact.php on line 14

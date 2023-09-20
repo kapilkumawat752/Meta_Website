@@ -1,0 +1,135 @@
+.container{
+    width: 100%;
+    height: 100%;
+    /* margin-top: 40px !important; */
+    text-align: center;
+}
+.img{
+    position: relative;
+    /* min-height: 200px; */
+    height: auto;
+    width: 100%;
+}
+/* .container-img-2{
+    height: 100%;
+    width: 100%;
+    min-height: 400px;    left: 0;
+}
+.img2{
+    margin-left: -355px;
+    height: auto;
+    /* margin-left: -38px;
+    margin-top: -166px; 
+    float: left;
+    position: relative;
+    animation-delay: 2s;
+    min-height: 200px;
+    width: 25%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.img2:hover {
+    opacity:0;
+  } */
+/* 
+.content-carousel{
+    text-align: center;
+    overflow: hidden;
+    font-size: 3.29375rem !important;
+    opacity: 1;
+    animation-name: slidein;
+} */
+.content-division{
+  vertical-align: middle;
+  margin: auto;
+  /* min-height: 300px; */
+}
+.content-font{
+  font-family: 'Lato';
+  font-size: 4.29375rem !important;
+    text-decoration: none !important;
+    color: white;
+    outline: none;
+    text-align: center;
+/* 
+    animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards; */
+            animation: fadeIn 5s infinite alternate;
+
+}
+@keyframes fadeIn { 
+  from { opacity: 0; } 
+}
+
+/* @keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+} */
+
+   /* @keyframes slidein {
+    
+    from {
+      margin-left: 0%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 100%;
+      width: 100%;
+    }
+   */
+
+@media screen and (max-width: 540px) and (min-width:220px) {
+  .content-carousel{
+    width: 100%;
+    height: auto;
+    right: 100;
+    text-align: center;
+    overflow: hidden;
+    font-size: 2.29375rem !important;
+    opacity: 1;
+    float: right;
+    margin-top: 40px;
+    animation-name: slidein;
+}
+.content-font{
+  font-family: 'Lato';
+  font-size: 4.29375rem !important;
+  text-decoration: none !important;
+  color: white;
+  outline: none;
+  text-align: center;
+}
+}
+@media screen and (min-width: 1024px) {
+  .content-carousel{
+    width: 100%;
+    height: auto;
+    right: 100;
+    text-align: center;
+    overflow: hidden;
+    font-size: 2.29375rem !important;
+    opacity: 1;
+    float: right;
+    margin-top: 40px;
+    animation-name: slidein;
+}
+.content-font{
+  font-family: 'Lato';
+  font-size: 4.29375rem !important; 
+  text-decoration: none !important;
+  color: white;
+  outline: none;
+  text-align: center;
+
+}
+}

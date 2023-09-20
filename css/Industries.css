@@ -1,0 +1,717 @@
+/* .financial_block{
+    padding-top: 50px;
+    float: right;
+    margin-right: 109px;
+
+}  */
+
+/* .full-screen-width-section {
+    width: calc(100vw) !important;
+    margin-left: calc(-50vw + 50% + 0px);
+    margin-top: -290px !important;
+}
+
+.image{ */
+    /* margin-top: 150px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-attachment: fixed; */
+    /* background-image: url(https://keykloud-dev-dev-ed--c.documentforce.com/sfc/dist/version/download/?oid=00D5f0000094Dma&ids=0685f000005zv4s&d=%2Fa%2F5f0000008aTh%2FS9zxdzurXBke8jJriRsQWATXuo3X1OIRdzihCFmoT2w&asPdf=false); */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 150px;
+    background-attachment: fixed;
+    clip: rect(0px,60px,200px,0px);
+} */
+
+ /* .st-ind-2 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hover-box {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    width: 25%;
+    box-sizing: border-box;
+    padding: 10px; */
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+    /* border: 10px solid black; */
+/* }
+.hover-box:hover {
+    background-color: #9e2a3a;
+}
+
+.hover-boxes .hover-box-inner {    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; */
+    /* background-image: url('https://files.techmahindra.com/static/img/xds/xds-services-bg.jpg'); */
+     /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+}  */
+
+ /* .hover-boxes .hover-box-inner {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+} 
+
+ .hover-boxes .hover-front {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+}  
+.hover-boxes .hover-back :hover{
+    background-color: #B71B31; */
+    /* transform:rotateX(180deg)
+}
+
+ .common-box-padding {
+    padding: 40px 0;
+}
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    width: 92%;
+}
+
+.wrapper:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+h2.txt-cnt {
+    text-align: center;
+}
+.txt-cnt {
+    text-align: center;
+}
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0;
+    padding-bottom: 20px;
+    color: rgb(253, 253, 255);
+}
+h2 {
+    display: -moz-box;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    font-weight: bold;
+    box-shadow: #151515;
+}
+.hover-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: rgb(255, 255, 255);
+}
+.hover-boxes .hover-box {
+    width: 25%;
+    box-sizing: border-box;
+    border: 1;
+    border: rgb(250, 250, 250);
+    padding: 10px;
+}
+.hover-boxes .hover-box-inner {  */
+    /* background-image: url(https://files.techmahindra.com/static/img/xds/xds-services-bg.jpg); */
+     /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+    border: #151515 !important;
+    border-width: medium;
+
+}
+.hover-front {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+}
+.hover-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hover-front .icon img {
+    filter: brightness(0) invert(1);
+    margin-bottom: 10px;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.hover-boxes h3 {
+    font-size: 27px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+h3 {
+    font-weight: 300;
+    font-size: 50px;
+}
+.hover-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hover-boxes .hover-box-inner {  */
+    /* background-image: url(https://files.techmahindra.com/static/img/xds/xds-services-bg.jpg); */
+     /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(90, 90, 191);
+    position: relative;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.hover-back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #B71B31;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s ease all;
+    pointer-events: none;
+    height: 0px;
+    overflow: hidden;
+    top: 50%;
+}
+p {
+    line-height: 27px;
+    padding-bottom: 25px;
+}
+.linkBtn-wht {
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-size: 14px;
+    position: relative;
+}
+a {
+    color: #151515;
+    text-decoration: none;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.linkBtn-wht span {
+    position: relative;
+    z-index: 2;
+}   */
+
+/* /* .industries_block {
+    padding-top: 10px;
+} */
+
+/* .financial_block {
+    height: 50px;
+    width: 50px; */
+    /* margin-right: 10px;
+/* .healthcare_block {
+    padding-top: 20px;
+    border-spacing: 15px;
+} */
+/* .industries_div { */
+    /* border: 1px solid black; */
+    /* margin: 10px;
+    min-height: 300px;
+    min-width: 300px;
+    height: 500px;
+    width: 500px; 
+    font-size: 23px;
+} */
+
+/* .industries_div:hover{ */
+    /* height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #B71B31;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s ease all;
+    pointer-events: none;
+    height: 0px;
+    overflow: hidden;
+    top: 50%;
+} */
+     /* background-color: rgb(189, 31, 31);
+
+}  */
+/* .industries_block{
+
+    font-size: 23px;
+
+} */
+
+/* .background_Image {
+    background-image: url(https://files.techmahindra.https://keykloud-dev-dev-ed--c.documentforce.com/sfc/dist/version/download/?oid=00D5f0000094Dma&ids=0685f000005zopV&d=%2Fa%2F5f0000008aKQ%2FtSw3ijQhkIbRo2.zl1uItS2MNi_56Q7EDD2y86Gbg6U&asPdf=falsecom/static/img/xds/xds-services-bg.jpg);
+} */
+/* p {
+    line-height: 27px;
+    padding-bottom: 25px;
+} */
+
+/* p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+} */
+
+
+
+
+
+
+.common-box-padding {
+    padding: 40px 0;
+}
+.wrapper {
+    /* max-width: 1200px;  */  
+    /* max-width commented as per discussion with Tanu */
+    margin: auto;
+    width: 92%;
+}
+.wrapper:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+h2.txt-cnt {
+    text-align: center;
+    /* margin-top: -25px; */
+}
+.txt-cnt {
+    text-align: center;
+    /* margin-top: -25px; */
+}
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
+    padding-bottom: 20px;
+    color: #fff;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.hover-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* margin-top:40px; */
+    color: black !important;
+    margin-top: 40px;
+    
+    /* color: black !important; */
+
+    /* -12px */
+}
+
+@media (max-width: 480px){
+
+    .hover-boxes {
+        margin-left: -24px;
+        margin-right: -25px;
+    }
+
+
+}
+
+
+.full-screen-width-section {
+    width: calc(100vw) !important;
+    margin-left: calc(-50vw + 50% + 0px);
+    margin-top: -30px !important;
+    margin-bottom: -10px !important;
+}
+/* .hover-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} */
+/* .hover-boxes .hover-box-inner {
+    /* background-image: url(https://keykloud-dev-dev-ed--c.documentforce.com/sfc/dist/version/download/?oid=00D5f0000094Dma&ids=0685f00000602XY&d=%2Fa%2F5f0000008af9%2Fyg7jvyYr7zhjv7gAq_aUYHCmslMk4JUvPi79KDNnih0&asPdf=false); */
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+} */ 
+.hover-front {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+}
+.hover-front .icon img {
+    filter: brightness(0) invert(1);
+    margin-bottom: 10px;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.hover-boxes h3 {
+    font-size: 27px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+h3 {
+    font-weight: 300;
+    font-size: 50px;
+}
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0;
+    padding-bottom: 20px;
+    color: rgb(255, 254, 254);
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: #fff;
+}
+.hover-back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #223b8b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    opacity: 1;
+   visibility: hidden;
+    transition: 0.4s ease all;
+    pointer-events: none;
+    height: 0px;
+    overflow: hidden;
+    top: 50%;
+}
+.hover-front.hover-back:hover::after {
+    background-color: #223b8b;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+p {
+    line-height: 27px;
+    padding-bottom: 25px;
+}
+p {
+    display: block;
+    /* margin-block-start: 1em;
+    margin-block-end: 1em; */
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.linkBtn-wht {
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-size: 14px;
+    position: relative;
+}
+a {
+    /* color: #151515; */
+    text-decoration: none;
+}
+a:-webkit-any-link {
+    /* color: -webkit-link; */
+    cursor: pointer;
+    /* text-decoration: underline; */
+}
+.linkBtn-wht:before {
+    content: '';
+    background: rgb(239,111,53);
+    background: linear-gradient(236deg, rgba(239,111,53,1) 0%, rgba(231,46,37,1) 43%, rgba(231,41,36,1) 73%, rgba(230,34,34,1) 100%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    transition-property: transform;
+    -webkit-transition-property: transform;
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
+    opacity: 0.2;
+}
+.linkBtn-wht span {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+.linkBtn-wht {
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-size: 14px;
+    position: relative;
+}
+/* .hover-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} */
+    .hover-boxes .hover-box {
+        width: 25%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .hover-boxes .hover-box-inner {
+        background-image: url('../media/Industries/Industries\ Page\ bg.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        position: relative;
+    }
+.hover-front {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+}
+    .hover-front .icon img {
+        filter: brightness(0) invert(1);
+        margin-bottom: 10px;
+    }
+.hover-boxes h3 {
+    font-size: 27px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+.hover-back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #223b8b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s ease all;
+    pointer-events: none;
+    height: 0px;
+    overflow: hidden;
+    top: 50%;
+}
+    .hover-back ol li {
+        margin-bottom: 8px;
+    }
+.hover-box-inner:hover .hover-back {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: unset;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+@media (max-width:1365px) {
+    .hover-boxes .hover-box {
+        width: 33.33%;
+    }
+}
+@media (max-width:768px) {
+    .hover-boxes .hover-box {
+        width: 50%;
+    }
+}
+@media (max-width:640px) {
+    .hover-boxes .hover-box {
+        width: 100%;
+    }
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}

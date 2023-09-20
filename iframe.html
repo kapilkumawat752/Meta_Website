@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Form</title>
+    <!-- Include any CSS stylesheets or JavaScript libraries needed for your form here -->
+    <link rel="stylesheet" href="./landingPage/landing.css">
+    <link rel="stylesheet" href="./requestForm/requestForm.css">
+</head>
+<body>
+   <!-- modal form start hare -->
+
+   <section>
+    <div id="myModal" class="modal">
+        <div class="request-form">
+            <div class="modal-content">
+                <form style="width: 100%;"
+                    action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
+                    method="POST">
+                    <input type=hidden name="oid" value="00D8b0000014j4D">
+                    <input type=hidden name="retURL" value="www.metadologie.com">
+                    <input type=hidden id="last_name" maxlength="80" name="last_name" size="20" type="text"
+                        value=".">
+                    <div class="form-container">
+                        <header class="form-header">
+                            <div onclick="closeModal()" class="close-button" title="Close">
+                                <span class="close-icon">
+                                </span>
+                                <span class="close-text"></span>
+                            </div>
+                            <h2 class="form-title">Request Demo</h2>
+                        </header>
+                        <div class="form-content">
+                            <div class="form-row flex justify-between">
+                                <div class="form-element half-width">
+                                    <input class="input-field" id="first_name" maxlength="40"
+                                        name="first_name" size="20" type="text" placeholder='Full Name' />
+                                    <label class="error-label"></label>
+                                </div>
+                                <div class="form-element half-width">
+                                    <input class="input-field" placeholder="Company" id="company"
+                                        maxlength="40" name="company" size="20" type="text" />
+                                    <label class="error-label"></label>
+                                </div>
+                            </div>
+                            <div class="form-row flex justify-between">
+                                <div class="form-element half-width">
+                                    <label class="error-label">*</label>
+                                    <input class="input-field" placeholder="Email" id="email" oninput='handleEmailInput(this)' maxlength="80"
+                                    name="email" size="20" type="text" required />
+                                    <label class="error-label"></label>
+                                </div>
+                                <div class="form-element half-width" style="display: flex;
+                                align-items: end;">
+                                    <input class="input-field" placeholder="Mobile Number" oninput="mobileValidate(this)" 
+                                        name="mobile" maxlength="10" type="text" />
+                                    <label class="error-label"></label>
+                                </div>
+                            </div>
+                            <div class="form-element flex">
+                                <input class="input-field" placeholder="Subject" id="subject" maxlength="40"
+                                    name="subject" size="20" type="text" />
+                                <label class="error-label"></label>
+                            </div>
+                            <div class="form-element brief-div">
+                                <textarea class="textarea-field" placeholder="Brief" id="title" name="title"
+                                    maxlength="40" size="20" type="text"></textarea>
+                                <label class="error-label"></label>
+                            </div>
+
+                            <select style="position: absolute; left: -9999px;" id="00N8b00000HQp3d" name="00N8b00000HQp3d" title="Services"><option value="">--None--</option><option value="B2B Commerce">B2B Commerce</option>
+                                <option value="Einstein Bot">Einstein Bot</option>
+                                <option value="Experience Cloud">Experience Cloud</option>
+                                <option value="Field Service Lightning">Field Service Lightning</option>
+                                <option value="Integrations">Integrations</option>
+                                <option value="Marketing Cloud">Marketing Cloud</option>
+                                <option value="Pardot">Pardot</option>
+                                <option value="Sales Cloud">Sales Cloud</option>
+                                <option value="Salesforce CPQ">Salesforce CPQ</option>
+                                <option value="Service Cloud">Service Cloud</option>
+                                </select>
+
+                                        <select  id="00N8b00000HQp3i" name="00N8b00000HQp3i" title="Integrations" style="position: absolute; left: -9999px;">
+                                            <option value="">--None--</option>
+                                            <option value="Esker">Esker</option>
+                                            <option value="Yay Pay">Yay Pay</option>
+                                            <option value="DocuSign">DocuSign</option>
+                                            <option value="Zenkraft">Zenkraft</option>
+                                            <option value="Visual Compliance">Visual Compliance</option>
+                                            <option value="AvSight">AvSight</option>
+                                            <option value="Avalara">Avalara</option>
+                                            <option value="Authvia">Authvia</option>
+                                            <option value="RingCentral">RingCentral</option>
+                                            <option value="Accounting Seed">Accounting Seed</option>
+                                        </select>
+                                 
+
+                        </div>
+                        <footer class="form-footer">
+                            <div class="cancel-button" title="Cancel" style="color: rgb(34, 59, 139);"
+                                onclick="closeModal()">Cancel</div>
+                            <input class="submit-button" type="submit" name="submit" disabled>
+                        </footer>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- modal form end hare -->
+    <!-- Include any JavaScript functions for handling form submission here
+    <script>
+        // JavaScript functions for handling form submission and validation
+        function closeModal() {
+            // Add your logic to close the modal here
+        }
+
+        function handleEmailInput(input) {
+            // Add your logic for handling email input here
+        }
+
+        function mobileValidate(input) {
+            // Add your logic for mobile validation here
+        }
+    </script> -->
+</body>
+
+</html>
