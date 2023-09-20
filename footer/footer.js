@@ -10,9 +10,8 @@ class Footer extends HTMLElement {
                 <div class="p-5">
                     <h2 class="footer-column-heading">Metadologie</h2>
                     <p class="footer-content footer-font-size">
-                    Behind every business lies a unique narrative waiting to be unveiled. Even in the
-                    case of a startup, where the story may not be filled with decades of changes and 
-                    growth, there's a compelling tale of how you arrived at your current venture.
+                    Behind every business lies a unique narrative waiting to be unveiled. 
+                    At Metadologie, we believe that the best stories are yet to be written.
                     </p>
 
                     <div class="social-icons">

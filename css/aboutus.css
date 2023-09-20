@@ -175,7 +175,7 @@ img {
 }
 
 .brief-content {
-    background-color: #7e8be4cc;
+    background-color:  #d1e2f1a6;
     bottom: -80px;
     color: #000;
     max-width: 420px;
@@ -188,7 +188,7 @@ img {
 
 @media screen and (max-width: 468px) {
     .brief-content {
-        background-color: #7e8be4cc;
+        background-color: #d1e2f1a6;
         bottom: -10%;
         color: #000;
         max-width: 150px;
@@ -216,7 +216,7 @@ img {
 
 @media screen and (min-width: 468px) and (max-width: 900px) {
     .brief-content {
-        background-color: #7e8be4cc;
+        background-color: #d1e2f1a6;
         bottom: -10%;
         color: #000;
         max-width: 250px;
@@ -232,7 +232,7 @@ img {
 
 @media (min-width: 900px) and (max-width: 1200px) {
     .brief-content {
-        background-color: #7e8be4cc;
+        background-color: #d1e2f1a6;
         color: #000;
         max-width: 250px;
         padding: 20px;
@@ -296,4 +296,7 @@ h1, h2, h3, h4, h5, h6 {
     body {
         font-size: 16px;
     }
+}
+.about-content {
+    padding: 0 8%;
 }

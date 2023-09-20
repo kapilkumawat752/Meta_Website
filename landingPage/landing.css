@@ -118,7 +118,7 @@ button.quick-enquiry-button,
     padding: 4% 8%;
     white-space: nowrap;
     font-weight: bold;
-    background-color: lightskyblue;
+    background-color:  #D1E2F1;
 }
 
 .get-in-touch-button {
@@ -325,4 +325,31 @@ img {
 
 .header{
     width:88% !important;
+}
+
+.our-services-card:hover {
+    transform: scale(1.10); 
+}
+
+.integration-card:hover {
+    transform: scale(1.10);
+}
+
+.our-services-card-body,
+.integration-card-body {
+    transition: all 0.3s ease-in-out;
+}
+
+.our-services-card:hover .our-services-card-body,
+.integration-card:hover .integration-card-body {
+    border-top: 1px solid var(--border-color);
+    box-shadow: var(--box-shadow-hover);
+}
+
+.our-services-card.p-vertical-5.height-100 {
+    transition: all 0.3s ease-out;
+}
+
+.integration-card {
+    transition: all 0.3s ease-out;
 }

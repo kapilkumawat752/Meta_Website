@@ -1,0 +1,168 @@
+.embeddedServiceHelpButton .helpButton .uiButton {
+    font-family: "Arial", sans-serif;
+    background-image: url('https://www.metadologie.com/media/Home%20page/Metadologie%20Icon.png') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    border: none !important;
+    animation: cta-bounce 3s ease-in-out 1, cta-shimmy 16s linear 15s infinite;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    justify-content: center;
+    box-shadow: none;
+    background-color: white !important;
+    height: 4em !important;    
+    width: 4em;
+    min-width: 4em;
+    border-radius: 50px !important;
+    box-shadow: 0px 0px 10px #0000002e;
+    background-size: 60% 55% !important;
+    background-position: center !important;
+
+    transition: all 1s ease-in-out;
+}
+
+.embeddedServiceHelpButton .helpButton .uiButton:hover {
+    box-shadow: 0px 0px 10px #00000042;
+    scale: 1.1;
+}
+
+.embeddedServiceHelpButton .helpButton .helpButtonEnabled:hover::before,
+.embeddedServiceHelpButton .helpButton .helpButtonEnabled:focus::before,
+.embeddedServiceHelpButton .helpButton .helpButtonEnabled:active::before {
+    opacity: 0 !important;
+}
+
+
+
+
+@keyframes cta-bounce {
+    0% {
+        transform: translateY(25px);
+    }
+
+    30% {
+        transform: translateY(-25px);
+    }
+
+    45% {
+        transform: translateY(0);
+    }
+
+    57% {
+        transform: translateY(-7px);
+    }
+
+    64% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes cta-shimmy {
+    1% {
+        transform: translateY(8px);
+    }
+
+    2% {
+        transform: translateY(0);
+    }
+
+    3% {
+        transform: translateY(-8px);
+    }
+
+    4% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.embeddedServiceHelpButton .helpButton .uiButton:focus {
+    outline: none !important;
+}
+
+.helpButton {
+    width: 94px !important;
+}
+
+.embeddedServiceHelpButton .helpButton {
+    height: 102px !important;
+}
+
+.slds-icon .slds-icon-text-default .slds-icon_x-small {
+    width: 22px !important;
+    margin-top: 8px !important;
+}
+
+
+
+h2[embeddedService-chatHeader_chatHeader] {
+    margin-top: 14px !important;
+    font-size: 14px !important;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+button[embeddedService-chatHeader_chatHeader] {
+    background: none !important;
+    border: none !important;
+    height: 15px !important;
+    min-height: 9px !important; 
+    width: 21px !important;
+    min-width: 14px !important; 
+    margin: 0 5px !important;
+    cursor: pointer !important;
+}
+
+.loading::after {
+    content: 'Loading';
+    position: absolute !important;
+    left: 0;
+    display: grid !important;
+    justify-content: center !important;
+    align-items: center !important;
+    z-index: 5 !important;
+    width: 100% !important;
+    height: 40px !important;
+    background: white !important;
+    color: black !important;
+    font-size: 12px !important;
+    border-radius: 50px;
+}
+
+.embeddedServiceIcon,
+.message {
+    display: none !important;
+}
+
+.minimizedText .message {
+    display: block !important;
+}
+
+.sidebarHeader[embeddedService-chatHeader_chatHeader] {
+    height: 70% !important;
+}
+
+.showDockableContainer {
+    margin-bottom: 17px !important;
+}
+
+.sidebarHeader[embeddedService-chatHeader_chatHeader] h2[embeddedService-chatHeader_chatHeader]::before {
+    content: '';
+    background-image: url('../images/metadologie\ logo\ \(2\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-top: auto;
+    padding: 1px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 50px;
+    background-size: 150%;
+    background-position: center;
+}
