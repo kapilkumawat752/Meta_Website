@@ -225,12 +225,33 @@
                 </c-job-posts>
             </section> -->
 
-             <div id="vfContainer" style="padding-top: 5%"></div>
+             <div id="vfContainer" style="padding-top: 5%">
+          
+        </div>
+
+        <!-- <script>
+          var vfContainer = document.getElementById("vfContainer");
+          vfContainer.innerHTML =
+            "https://dev1-a2-dev-ed--c.develop.vf.force.com/apex/MetadologieOpenings";
+        </script> -->
 
         <script>
           var vfContainer = document.getElementById("vfContainer");
-          vfContainer.innerHTML =
-            '<apex:includeScript value="https://dev1-a2-dev-ed--c.develop.vf.force.com/apex/MetadologieOpenings"/>';
+
+          // Use JavaScript to load the Visualforce page content
+          // Replace "YourVisualforcePageName" with the actual name of your Visualforce page
+          var vfPageUrl =
+            "https://dev1-a2-dev-ed.develop.my.site.com/JobOpenings/s";
+
+          // Fetch the content of the Visualforce page using AJAX
+          fetch(vfPageUrl)
+            .then((response) => response.text())
+            .then((data) => {
+              vfContainer.innerHTML = data;
+            })
+            .catch((error) => {
+              console.error("Error fetching Visualforce page:", error);
+            });
         </script>
             
         </c-career-page>
