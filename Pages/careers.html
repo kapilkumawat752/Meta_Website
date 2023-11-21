@@ -192,7 +192,7 @@
                     </div>
                 </div>
             </section>
-            <section c-careerpage_careerpage="" style="padding-top: 5%;">
+<!--             <section c-careerpage_careerpage="" style="padding-top: 5%;">
                 <c-job-posts c-careerpage_careerpage="" c-jobposts_jobposts-host="">
                     <section  style="display:flex;">
                         <div  class="careers-zigzag__column -left -text"
@@ -223,7 +223,16 @@
                         </div>
                     </section>
                 </c-job-posts>
-            </section>
+            </section> -->
+
+             <div id="vfContainer" style="padding-top: 5%"></div>
+
+        <script>
+          var vfContainer = document.getElementById("vfContainer");
+          vfContainer.innerHTML =
+            '<apex:includeScript value="https://dev1-a2-dev-ed--c.develop.vf.force.com/apex/MetadologieOpenings"/>';
+        </script>
+            
         </c-career-page>
     </main>
     <div style="margin-top: 15px;" data-priority="" data-item-id="7ea5f8db-4c90-4196-b37a-fed734465f95" class="ui-widget"
