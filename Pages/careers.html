@@ -224,22 +224,24 @@
                     </section>
                 </c-job-posts>
             </section> -->
-
-             <div id="vfContainer" style="padding-top: 5%">
-          <iframe
+            <div id="vfContainerForIframe" style="padding-top: 5%">
+                <iframe
             src="https://dev1-a2-dev-ed.develop.my.site.com/JobOpenings/s"
             width="100%"
             height="100%"
             frameborder="0"
           ></iframe>
+            </div>
+             <div id="vfContainer" style="padding-top: 5%">
+          
         </div>
 
-        <script>
+<!--         <script>
           var vfContainer = document.getElementById("vfContainer");
           vfContainer.innerHTML =
             "https://dev1-a2-dev-ed--c.develop.vf.force.com/apex/MetadologieOpenings";
-        </script>
-<!-- 
+        </script> -->
+
         <script>
           var vfContainer = document.getElementById("vfContainer");
 
@@ -257,7 +259,7 @@
             .catch((error) => {
               console.error("Error fetching Visualforce page:", error);
             });
-        </script> -->
+        </script>
             
         </c-career-page>
     </main>
