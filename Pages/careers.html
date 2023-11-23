@@ -232,7 +232,7 @@
             frameborder="0"
           ></iframe>
             </div> -->
-             <div id="vfContainer" style="padding-top: 5%">
+             <div id="vfContainer" style="padding-top: 5%; height:100%" onload="divLoaded()">
           
         </div>
 
@@ -242,6 +242,17 @@
             "https://dev1-a2-dev-ed.develop.my.site.com/JobOpenings/s";
         </script>
 
+            <script type="text/javascript">
+  function divLoaded() {
+      var divID = document.getElementById('vfContainer');
+      if(divID) {
+            // here you can make the height, I delete it first, then I make it again
+            divID.height = "";
+            divID.height = divID.innerHTML.document.body.scrollHeight + "px";
+      }   
+  }
+</script> 
+            
 <!--         <script>
           var vfContainer = document.getElementById("vfContainer");
 
