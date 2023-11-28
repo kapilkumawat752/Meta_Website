@@ -270,18 +270,21 @@
   }
 </script>   -->
             
-       <div id="vfContainer" style="padding-top: 5%; height: 100%;" onload="divLoaded()">
+
+<div id="vfContainer" style="padding-top: 5%; height: 100vh;" onload="divLoaded()">
 </div>
 
 <script>
     var vfContainer = document.getElementById("vfContainer");
-
-    // Use JavaScript to load the Visualforce page content
     var vfPageUrl = "https://dev1-a2-dev-ed.develop.my.site.com/JobOpenings/s";
 
-    // Fetch the content of the Visualforce page using AJAX
-    fetch(vfPageUrl)
-        .then((response) => response.text())
+    fetch(vfPageUrl, { credentials: 'include' })
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
         .then((data) => {
             vfContainer.innerHTML = data;
         })
@@ -289,6 +292,7 @@
             console.error("Error fetching Visualforce page:", error);
         });
 </script>
+
 
             
         </c-career-page>
