@@ -67,9 +67,15 @@
                         width: 100%;
                         height: auto;
                     }
+                    
                     .oneAlohaPageDeprecated>iframe {
                         height: 100vh;
                     }
+                    
+                    iframe {
+                        height: 100vh;
+                    }
+                    
                 </style>
                 <div class="slider">
                     <div class="carousel">
@@ -233,11 +239,11 @@
                     </section>
                 </c-job-posts>
             </section> -->
-            <div id="vfContainerForIframe" style="padding-top: 5%" onload="parent.iframeLoaded();">
+            <div id="vfContainerForIframe" style="padding-top: 5%" onload="iframeLoaded()">
                 <iframe
             src="https://dev1-a2-dev-ed.develop.my.site.com/JobOpenings/s"
-            width="100%"
-            height="100vh"
+            style="width:100%;
+            height:100vh;"
             frameborder="0"
           ></iframe>
             </div>
