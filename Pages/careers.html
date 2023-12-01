@@ -261,7 +261,9 @@
             src="https://dev1-a2-dev-ed.develop.my.site.com/JobOpenings/s"
             style="width:100%;
             height:100vh;"
+            id="vf-iframe"
             frameborder="0"
+            onload="getClientHeight()"
           ></iframe>
             </div>
 
@@ -340,6 +342,16 @@
     function updateCarousel() {
         const translateXValue = -currentIndex * 100; // Move images horizontally
         carousel.style.transform = `translateX(${translateXValue}%)`;
+    }
+     function getClientHeight() {
+        // Get the height of the iframe's content area
+        console.log('Frame heigh calucalted');
+        var iframe = document.getElementById('vf-iframe');
+        var iframeClientHeight = iframe.contentDocument.documentElement.clientHeight;
+         console.log('Frame heigh calucalted +++++++++========> ',iframeClientHeight);
+        
+        // Display the height on the page
+        document.getElementById('output').innerText = 'Client Height: ' + iframeClientHeight + 'px';
     }
 
     setInterval(nextSlide, 3000); // Auto-slide every 3 seconds
