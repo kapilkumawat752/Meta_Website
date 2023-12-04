@@ -258,9 +258,11 @@
             </section> -->
             <div id="vfContainerForIframe" style="padding-top: 5%">
                 <iframe
-            src="https://dev1-a2-dev-ed.develop.my.site.com/JobOpenings"
-            style="width:100%;"
+            src="https://dev1-a2-dev-ed.develop.my.site.com/JobOpenings/s/candidate-registration-form"
+            style="width:100%;
+            overflow: hidden;"
             id="vf-iframe"
+            scrolling ="no" 
             frameborder="0"
             onload="getClientHeight()"
           ></iframe>
@@ -342,6 +344,8 @@
         const translateXValue = -currentIndex * 100; // Move images horizontally
         carousel.style.transform = `translateX(${translateXValue}%)`;
     }
+        setInterval(nextSlide, 3000); // Auto-slide every 3 seconds
+
      function getClientHeight() {
         // Get the height of the iframe's content area
         console.log('Frame heigh calucalted');
@@ -355,7 +359,6 @@
         document.getElementById('output').innerText = 'Client Height: ' + iframeClientHeight + 'px';
     }
 
-    setInterval(nextSlide, 3000); // Auto-slide every 3 seconds
 </script>
 
 </body>
