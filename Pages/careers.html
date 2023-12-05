@@ -297,8 +297,8 @@ window.addEventListener('message', function (event) {
       let storeInterval = setInterval(()=>{
         let iframe = document.querySelector('iframe');
         if(iframe){
-          console.log('iframe size is changed', iframe);
-          iframe.style.height = bodyHeight;
+          console.log('iframe size is changed',iframe, 'bodyheight', bodyHeight);
+          iframe.style.height = `${bodyHeight}`;
         }
       },100);
     }
