@@ -289,10 +289,19 @@ window.addEventListener('message', function (event) {
     }
     if ( event.data.action === 'bodyHeight' ){
       console.log('inside body height ');
-      console.log('iframe body size', document.querySelector('iframe').style.height);
-        document.querySelector('iframe').style.height = event.data.url;
+      setBodySize(event.data.url);
     }
 });
+
+    let setBodySize = (bodyHeight)=>{
+      let storeInterval = setInterval(()=>{
+        let iframe = document.querySelector('iframe');
+        if(iframe){
+          console.log('iframe size is changed');
+          iframe.style.height = bodyHeight;
+        }
+      },100);
+    }
   </script>
 
   <footer>
