@@ -284,8 +284,9 @@
   <script>
     let iframe = document.querySelector('iframe');
       let iframePriorValue = iframe.src;
-      console.log(iframePriorValue);
       setInterval(()=>{
+        console.log('iframesrc value',iframe.src);
+        console.log('iframePriorValue',iframePriorValue);
         if(iframe.src != iframePriorValue){
           console.log('iframe is changed');
           window.location.href = iframe.scr;
