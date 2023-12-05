@@ -299,7 +299,8 @@ window.addEventListener('message', function (event) {
         let iframe = document.querySelector('iframe');
         if(iframe && !called){
           console.log('iframe size is changed',iframe, 'bodyheight', bodyHeight);
-          iframe.style.height = `${bodyHeight}`;
+          iframe.style.height = `${bodyHeight}`px;
+          console.log('iframe.style.height', iframe.style.height);
           called = true;
         }
       },100);
