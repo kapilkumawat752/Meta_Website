@@ -288,6 +288,8 @@ window.addEventListener('message', function (event) {
         window.location.href = event.data.url;
     }
     if ( event.data.action === 'bodyHeight' ){
+      console.log('inside body height ');
+      console.log('iframe body size', document.querySelector('iframe').style.height);
         document.querySelector('iframe').style.height = event.data.url;
     }
 });
