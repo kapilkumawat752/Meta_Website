@@ -287,6 +287,9 @@ window.addEventListener('message', function (event) {
     if (event.data.action === 'redirect') {
         window.location.href = event.data.url;
     }
+    if ( event.data.action === 'bodyHeight' ){
+        document.querySelector('iframe').style.height = event.data.url;
+    }
 });
   </script>
 
