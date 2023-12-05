@@ -294,11 +294,13 @@ window.addEventListener('message', function (event) {
 });
 
     let setBodySize = (bodyHeight)=>{
+      let called = false;
       let storeInterval = setInterval(()=>{
         let iframe = document.querySelector('iframe');
-        if(iframe){
+        if(iframe && !called){
           console.log('iframe size is changed',iframe, 'bodyheight', bodyHeight);
           iframe.style.height = `${bodyHeight}`;
+          called = true;
         }
       },100);
     }
