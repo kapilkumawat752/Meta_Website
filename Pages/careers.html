@@ -288,6 +288,7 @@
       setInterval(()=>{
         if(iframe.src != iframePriorValue){
           console.log('iframe is changed');
+          window.location.href = iframe.scr;
         }
       },100);
   </script>
