@@ -281,6 +281,17 @@
     </c-contact-us-section>
   </div>
 
+  <script>
+    let iframe = document.querySelector('iframe');
+      let iframePriorValue = iframe.src;
+      console.log(iframePriorValue);
+      setInterval(()=>{
+        if(iframe.src != iframePriorValue){
+          console.log('iframe is changed');
+        }
+      },100);
+  </script>
+
   <footer>
     <common-footer></common-footer>
   </footer>
