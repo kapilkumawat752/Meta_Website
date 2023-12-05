@@ -282,16 +282,12 @@
   </div>
 
   <script>
-    let iframe = document.querySelector('iframe');
-      let iframePriorValue = iframe.src;
-      setInterval(()=>{
-        console.log('iframesrc value',iframe.src);
-        console.log('iframePriorValue',iframePriorValue);
-        if(iframe.src != iframePriorValue){
-          console.log('iframe is changed');
-          window.location.href = iframe.scr;
-        }
-      },5000);
+window.addEventListener('message', function (event) {
+      console.log('redirec is called');
+    if (event.data.action === 'redirect') {
+        window.location.href = event.data.url;
+    }
+});
   </script>
 
   <footer>
