@@ -103,15 +103,7 @@
         iframeElement.allowFullscreen = true;
         divElement.appendChild(iframeElement);
 
-         let setBodySize = (bodyHeight)=>{
-          let called = false;
-          let storeInterval = setInterval(()=>{
-            let iframe = document.querySelector('iframe');
-            if(iframe && !called){
-              iframe.style.height = `${bodyHeight}px`;
-              called = true;
-            }
-          },100);
+       
         window.addEventListener('message', function (event) {
             if ( event.data.action === 'bodyHeight' ){
               console.log('inside body height ');
@@ -119,6 +111,17 @@
             }
         });
 
+          let setBodySize = (bodyHeight)=>{
+              console.log(bodyHeight);
+          let called = false;
+          let storeInterval = setInterval(()=>{
+            let iframe = document.querySelector('iframe');
+            if(iframe && !called){
+                console.log('height is changed');
+              iframe.style.height = `${bodyHeight}px`;
+              called = true;
+            }
+          },100);
        
     }
     </script>
