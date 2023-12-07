@@ -101,8 +101,26 @@
         var iframeElement = document.createElement("iframe");
         iframeElement.src = "https://dev1-a2-dev-ed.develop.my.salesforce-sites.com/JobOpenings/CandidateRegistrationForm"+'?id='+ positionId;
         iframeElement.allowFullscreen = true;
-    
         divElement.appendChild(iframeElement);
+
+         let setBodySize = (bodyHeight)=>{
+          let called = false;
+          let storeInterval = setInterval(()=>{
+            let iframe = document.querySelector('iframe');
+            if(iframe && !called){
+              iframe.style.height = `${bodyHeight}px`;
+              called = true;
+            }
+          },100);
+        window.addEventListener('message', function (event) {
+            if ( event.data.action === 'bodyHeight' ){
+              console.log('inside body height ');
+              setBodySize(event.data.url);
+            }
+        });
+
+       
+    }
     </script>
     <script src="../header/header.js" defer></script>
     <script src="../footer/footer.js" defer></script>
