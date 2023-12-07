@@ -70,8 +70,7 @@
         <common-header></common-header>
     </header>
     <section class="apply-now-section">
-        <div>
-            <iframe src="https://dev1-a2-dev-ed.develop.my.salesforce-sites.com/JobOpenings/CandidateRegistrationForm"></iframe>
+        <div id='position-iframe'>
         </div>
     </section>
     <c-contact-us-section data-data-rendering-service-uid="43" data-aura-rendered-by="432:0"
@@ -94,6 +93,17 @@
         <common-footer></common-footer>
     </footer>
 
+    <script>
+        var url_string = window.location.href;
+        var url = new URL(url_string);
+        var positionId = url.searchParams.get("id");
+        var divElement = document.getElementById("position-iframe");
+        var iframeElement = document.createElement("iframe");
+        iframeElement.src = "https://dev1-a2-dev-ed.develop.my.salesforce-sites.com/JobOpenings/CandidateRegistrationForm"+'?id='+ positionId;
+        iframeElement.allowFullscreen = true;
+    
+        divElement.appendChild(iframeElement);
+    </script>
     <script src="../header/header.js" defer></script>
     <script src="../footer/footer.js" defer></script>
 </body>
