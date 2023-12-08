@@ -110,7 +110,7 @@
               setBodySize(event.data.url);
             }
             if ( event.data.action === 'redirect' ){
-              window.open(event.data.url);
+              window.open(event.data.url, '_self');
             }
         });
 
