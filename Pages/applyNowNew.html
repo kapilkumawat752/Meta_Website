@@ -109,6 +109,9 @@
               console.log('inside body height ');
               setBodySize(event.data.url);
             }
+            if ( event.data.action === 'redirect' ){
+              window.open(event.data.url);
+            }
         });
 
           let setBodySize = (bodyHeight)=>{
