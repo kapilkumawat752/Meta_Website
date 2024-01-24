@@ -252,6 +252,24 @@
             </section>
             <!-- page form end hare -->
 
+<!--             ThumbsUp Section -->
+
+            <div class="likeBlog" style="margin-top:5%;">
+          <div class="innerBlog">Was this Blog helpful?
+            <div class="blogLiked"><span id="counter">0</span>
+              <button class="slds-button slds-button_icon slds-is-selected slds-button_icon-border-filled" aria-pressed="false"
+                title="Like" onclick="likedOrDisliked()">
+                <svg class="slds-button__icon" aria-hidden="true">
+                  <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#like"></use>
+                </svg>
+                <span class="slds-assistive-text">Like</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+<!--   ThumbsUp Section Ends here   -->
+
 
         </div>
     </main>
@@ -263,6 +281,39 @@
     <script src="./landingPage/landing.js"></script>
     <script src="./header/header.js" defer></script>
     <script src="./footer/footer.js" defer></script>
+    <script>
+        function getCounter() {
+    $.ajax({
+        url: 'https://dev1-a2-dev-ed.develop.my.site.com/services/apexrest/blogLikeCounter',
+        type: 'GET',
+        // headers: {
+        //     'Authorization': 'Bearer YOUR_ACCESS_TOKEN'
+        //     // Replace YOUR_ACCESS_TOKEN with the actual access token obtained from Salesforce
+        // },
+        success: function (response) {
+            document.getElementById('counter').innerText = response;
+        }
+    });
+}
+
+function likedOrDisliked() {
+    $.ajax({
+        url: 'https://dev1-a2-dev-ed.develop.my.site.com/services/apexrest/blogLikeCounter',
+        type: 'PATCH',
+        // headers: {
+        //     'Authorization': 'Bearer YOUR_ACCESS_TOKEN'
+        //     // Replace YOUR_ACCESS_TOKEN with the actual access token obtained from Salesforce
+        // },
+        success: function () {
+            getCounter(); // Update the counter after a like
+        }
+    });
+}
+
+// Initial load
+getCounter();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </body>
 
 </html>
