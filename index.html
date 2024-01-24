@@ -307,7 +307,7 @@ function getCounter() {
     fetch(url).then(data => {
         return data.json;
     }).then(result => {
-        console.log("THIS IS OUR LOG : : ", result);
+        console.log("THIS IS OUR LOG : : ", JSON.stringify(result));
     })
 
 function likedOrDisliked() {
