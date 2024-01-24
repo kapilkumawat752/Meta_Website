@@ -302,6 +302,14 @@ function getCounter() {
     });
 }
 
+        let url = "https://dev1-a2-dev-ed.develop.my.site.com/services/apexrest/blogLikeCounter";
+
+    fetch(url).then(data => {
+        return data.json;
+    }).then(result => {
+        console.log("THIS IS OUR LOG : : ", result);
+    })
+
 function likedOrDisliked() {
     $.ajax({
         url: 'https://dev1-a2-dev-ed.develop.my.site.com/services/apexrest/blogLikeCounter',
