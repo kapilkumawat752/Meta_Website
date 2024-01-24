@@ -282,7 +282,11 @@
     <script src="./header/header.js" defer></script>
     <script src="./footer/footer.js" defer></script>
     <script>
-        function getCounter() {
+        // New thumbsup Code
+let check = false;
+let counter = 0;
+
+function getCounter() {
     $.ajax({
         url: 'https://dev1-a2-dev-ed.develop.my.site.com/services/apexrest/blogLikeCounter',
         type: 'GET',
@@ -291,7 +295,9 @@
         //     // Replace YOUR_ACCESS_TOKEN with the actual access token obtained from Salesforce
         // },
         success: function (response) {
-            document.getElementById('counter').innerText = response;
+            // Assuming the response contains the counter value
+            counter = parseInt(response);
+            document.getElementById('counter').innerText = counter;
         }
     });
 }
@@ -305,7 +311,16 @@ function likedOrDisliked() {
         //     // Replace YOUR_ACCESS_TOKEN with the actual access token obtained from Salesforce
         // },
         success: function () {
-            getCounter(); // Update the counter after a like
+            
+            if (!check) {
+                counter++;
+            } else {
+                counter--;
+            }
+            // Toggle the check variable and update the counter
+            check = !check;
+            // Update the counter display
+            document.getElementById('counter').innerText = counter;
         }
     });
 }
