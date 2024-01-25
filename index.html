@@ -281,7 +281,7 @@
     <script src="./landingPage/landing.js"></script>
     <script src="./header/header.js" defer></script>
     <script src="./footer/footer.js" defer></script>
-    <script>
+<!--     <script>
         // New thumbsup Code
 let check = false;
 let counter = 0;
@@ -336,7 +336,84 @@ function likedOrDisliked() {
 // Initial load
 getCounter();
     </script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js">
+</script> -->
+
+    <!-- Like button HTML -->
+<div class="likeBlog">
+  <div class="innerBlog">Was this Blog helpful?
+    <div class="blogLiked">
+      <span id="counter">0</span>
+      <button class="slds-button slds-button_icon slds-is-selected slds-button_icon-border-filled"
+              aria-pressed="false" title="Like" onclick="likedOrDisliked()">
+        <svg class="slds-button__icon" aria-hidden="true">
+          <!-- Your like icon SVG here -->
+        </svg>
+        <span class="slds-assistive-text">Like</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript for like button functionality and Firebase interaction -->
+
+        <!-- Include Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js"></script>
+    
+<script>
+  let check = false;
+  let counter = 0;
+
+  function getCounter() {
+    // Get the current counter value from Firebase
+    database.ref('likes').once('value', (snapshot) => {
+      counter = snapshot.val() || 0;
+      document.getElementById('counter').innerText = counter;
+    });
+  }
+
+  function likedOrDisliked() {
+    // Toggle the check variable and update the counter
+    check = !check;
+    if (!check) {
+      counter++;
+    } else {
+      counter--;
+    }
+
+    // Update the counter display
+    document.getElementById('counter').innerText = counter;
+
+    // Update the counter value in Firebase
+    database.ref('likes').set(counter);
+  }
+
+  // Initial load
+  getCounter();
+</script>
+
+<script>
+const firebaseConfig = {
+  apiKey: "AIzaSyBnGbMm6CkcOfO3fkn7Y_QnE25R9Tv_Jjw",
+  authDomain: "metadologie-blogs-counter.firebaseapp.com",
+  projectId: "metadologie-blogs-counter",
+  storageBucket: "metadologie-blogs-counter.appspot.com",
+  messagingSenderId: "844167598399",
+  appId: "1:844167598399:web:fdd558be4fa10127a5038a",
+  measurementId: "G-LMRKC7NF33"
+};
+
+    // Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+// Get a reference to the Firebase Realtime Database
+const database = firebase.database();
+
+</script>
+
+
+    
 </body>
 
 </html>
